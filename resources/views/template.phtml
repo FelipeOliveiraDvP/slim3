@@ -1,0 +1,14 @@
+
+<?php include_once 'inc/header.phtml'; ?>
+
+<?php 	if (isset($page)) 
+		{
+			include_once 'pages/'.$page.'.phtml';
+		} 
+		else
+		{
+			include_once 'pages/index.phtml';
+		}
+?>
+
+<?php include_once 'inc/footer.phtml'; ?>
